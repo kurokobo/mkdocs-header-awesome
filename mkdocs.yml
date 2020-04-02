@@ -1,0 +1,23 @@
+site_name: MkDocs サンプル
+repo_url: https://github.com/kurokobo/mkdocs-header-awesome
+
+theme:
+    name: "material"
+    language: "ja"
+    palette:
+        primary: "grey"
+        accent: "blue"
+
+markdown_extensions:
+    - admonition
+    - codehilite:
+        linenums: true
+    - toc:
+        permalink: true
+    - fontawesome_markdown
+
+extra_css:
+    - "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    # - "https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    - "css/custom.css"
+
