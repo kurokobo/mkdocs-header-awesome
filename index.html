@@ -1,0 +1,644 @@
+
+
+
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="クリップボードへコピー">
+      
+        <meta name="lang:clipboard.copied" content="コピーしました">
+      
+        <meta name="lang:search.language" content="ja">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="何も見つかりませんでした">
+      
+        <meta name="lang:search.result.one" content="1件見つかりました">
+      
+        <meta name="lang:search.result.other" content="#件見つかりました">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>MkDocs サンプル</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#757575">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="css/custom.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="grey" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#mkdocs-font-awesome" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="MkDocs サンプル" aria-label="MkDocs サンプル" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              MkDocs サンプル
+            </span>
+            <span class="md-header-nav__topic">
+              
+                MkDocs の見出しを Font Awesome で装飾
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            検索キーワードを入力してください
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/kurokobo/mkdocs-header-awesome/" title="リポジトリへ" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="." title="MkDocs サンプル" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    MkDocs サンプル
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/kurokobo/mkdocs-header-awesome/" title="リポジトリへ" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        MkDocs の見出しを Font Awesome で装飾
+      </label>
+    
+    <a href="." title="MkDocs の見出しを Font Awesome で装飾" class="md-nav__link md-nav__link--active">
+      MkDocs の見出しを Font Awesome で装飾
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    考え方
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    手順
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    アイコンを探す
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-awesome-5" class="md-nav__link">
+    Font Awesome 5 を使いたい場合
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    見出しサンプル（レベル 2）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    見出しサンプル（レベル 3）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    見出しサンプル（レベル 3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    見出しサンプル（レベル 4）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    見出しサンプル（レベル 4）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    考え方
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    手順
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    アイコンを探す
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-awesome-5" class="md-nav__link">
+    Font Awesome 5 を使いたい場合
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    見出しサンプル（レベル 2）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    見出しサンプル（レベル 3）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    見出しサンプル（レベル 3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    見出しサンプル（レベル 4）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    見出しサンプル（レベル 4）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/kurokobo/mkdocs-header-awesome/edit/master/docs/index.md" title="編集" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="mkdocs-font-awesome">MkDocs の見出しを Font Awesome で装飾<a class="headerlink" href="#mkdocs-font-awesome" title="Permanent link">&para;</a></h1>
+<p>Font Awesome のアイコンが見出しの頭にくっつくようにして、なんとなくかわいい感じにします。</p>
+<p>このページはそのライブデモです。上の見出しには <i class="fa fa-book"></i>、下の見出しには <i class="fa fa-arrow-circle-right"></i> がついています。</p>
+<h2 id="_1">考え方<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>実現方法には、</p>
+<ul>
+<li>愚直に Markdown 中の見出し行（<code>#</code> とか <code>##</code> とか）に Font Awesome の記述を埋め込む案</li>
+<li>CSS の <code>::before</code> 疑似要素で流し込む案</li>
+</ul>
+<p>がありますが、装飾目的のモノを本文に混ぜこむことはマークアップの思想に反する気がするので、後者を採用します。<code>fontawesome_markdown</code> とも共存可能です。</p>
+<p>わりと強引な手なので、本来いちばんお行儀がよいのは、おそらく専用の拡張機能を開発することな気もしていますが、使いたい範囲では使えているのでひとまずよしとします。</p>
+<div class="admonition note">
+<p class="admonition-title">オーバライドの必要性</p>
+<p><code>Material</code> テーマでは、見出しの <code>::before</code> 疑似要素が事前定義されているため、一部の設定は <code>!important</code> を指定してオーバライドする必要があります。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">オーバライドの危険性</p>
+<p>オーバライドする必要があるとは言ったものの、当然ながら副作用を誘発している可能性はあり、かつ調べきれていないので、ほどほどに自己責任で使ってください。</p>
+<p>レスポンシブでの挙動やスマートフォンでの閲覧、印刷モード、IE など、簡単に確認している範囲では問題なさそうです。</p>
+</div>
+<h2 id="_2">手順<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><code>mkdocs.yml</code> の <code>extra_css</code> で Font Awesome の CSS ファイルと自前の CSS ファイルを指定して、</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nt">extra_css</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;css/custom.css&quot;</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>自前の CSS ファイルの中で、<code>::before</code> 疑似要素を定義します。</p>
+<p>例えば、<code>h2</code> の見出し（<code>##</code>）の頭に <i class="fa fa-arrow-circle-right"></i> をくっつけたい場合は、<a href="https://fontawesome.com/v4.7.0/icon/arrow-circle-right">一覧で調べる</a> と Unicode が <code>f0a9</code> なので、</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">/* Materials テーマの場合 */</span>
+<span class="p">.</span><span class="nc">md-typeset</span> <span class="nt">h2</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;FontAwesome&quot;</span><span class="p">;</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s2">&quot;\f0a9&quot;</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="p">:</span> <span class="mf">.3</span><span class="kt">em</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">/* デフォルトのテーマの場合 */</span>
+<span class="nt">h2</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;FontAwesome&quot;</span><span class="p">;</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s2">&quot;\f0a9&quot;</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="p">:</span> <span class="mf">.3</span><span class="kt">em</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>な具合で記述します。もちろん <code>margin-right</code> は必須ではないですが、多少はあったようが目に優しい気がします。同様に、色やサイズも適宜変更できます。</p>
+<p>複数の見出しレベルを装飾したい場合は、副作用に気を付けつつ共通の指定はまとめるのもアリです。次の例では、<code>h1</code> に <i class="fa fa-book"></i>、<code>h2</code> に <i class="fa fa-arrow-circle-right"></i> を追加しています。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">.</span><span class="nc">md-typeset</span> <span class="o">&gt;</span> <span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;FontAwesome&quot;</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="p">:</span> <span class="mf">.3</span><span class="kt">em</span><span class="p">;</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">md-typeset</span> <span class="nt">h1</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s2">&quot;\f02d &quot;</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">md-typeset</span> <span class="nt">h2</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s2">&quot;\f0a9&quot;</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition warning">
+<p class="admonition-title">まとめた場合の副作用</p>
+<p>もちろん、副作用の範囲は広がるので、意図しない部分の表現が壊れる可能性があります。</p>
+<p>上記では、<code>&gt;</code> で <code>.md-typeset</code> クラスの直接の子要素の <code>::before</code> 疑似要素にのみ作用させているので、逆に何らかのブロック要素に見出しを含めた場合は期待する表示にならない可能性もあります。</p>
+</div>
+<h2 id="_3">アイコンを探す<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>CSS で <code>4.7.0</code> を指定したので、<a href="https://fontawesome.com/v4.7.0/icons/">公式ページの <code>4.7.0</code> の一覧ページ</a> が対応します。それぞれのアイコンのリンク先で Unicode が確認できます。</p>
+<h2 id="font-awesome-5">Font Awesome 5 を使いたい場合<a class="headerlink" href="#font-awesome-5" title="Permanent link">&para;</a></h2>
+<p>上記は <code>4.x</code> 系の例ですが、最新の <code>5.x</code> 系にしたい場合は、</p>
+<ul>
+<li>CSS を <code>https://use.fontawesome.com/releases/v5.13.0/css/all.css</code> などにする</li>
+<li>フォント名を <code>Font Awesome 5 Free</code> にする</li>
+</ul>
+<p>と動作します。この場合の <a href="https://fontawesome.com/icons">アイコンの一覧は別のページ</a> です。</p>
+<p><code>4.x</code> 系は古いですが、本来 <code>5.x</code> 系はユーザ登録が必要なのと、<a href="https://www.mkdocs.org/">MkDocs の公式サイト</a> では <code>4.7.0</code> なのと、を理由に今回も <code>4.7.0</code> で紹介しています。</p>
+<h2 id="2">見出しサンプル（レベル 2）<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>吾輩は猫である。名前はまだ無い。</p>
+<ul>
+<li>どこで生れたか<ul>
+<li>とんと見当がつかぬ。</li>
+<li>何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</li>
+</ul>
+</li>
+<li>吾輩はここで始めて人間というものを見た。</li>
+</ul>
+<h3 id="3">見出しサンプル（レベル 3）<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。</p>
+<h3 id="3_1">見出しサンプル（レベル 3）<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<p>この書生というのは時々我々を捕えて煮て食うという話である。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">しかしその当時は何という考もなかったから別段恐しいとも思わなかった。</span>
+<span class="err">ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。</span>
+</code></pre></div>
+</td></tr></table>
+
+<h4 id="4">見出しサンプル（レベル 4）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
+<p>掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。</p>
+<h4 id="4_1">見出しサンプル（レベル 4）<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h4>
+<p>第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.c33a9706.js"></script>
+      
+        
+        
+          
+          <script src="assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="assets/javascripts/lunr/lunr.ja.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.1",url:{base:"."}})</script>
+      
+    
+  </body>
+</html>
