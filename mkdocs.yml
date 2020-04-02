@@ -21,3 +21,5 @@ extra_css:
     # - "https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     - "css/custom.css"
 
+nav:
+    - ホーム: index.md
