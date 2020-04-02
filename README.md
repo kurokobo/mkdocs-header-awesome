@@ -1,3 +1,5 @@
 # Decorate MkDocs headings with Font Awesome
 
-Hosted at: <https://kurokobo.github.io/mkdocs-header-awesome/>
+Live Demo: <https://kurokobo.github.io/mkdocs-header-awesome/>
+
+![image](https://user-images.githubusercontent.com/2920259/78280305-d5ec7400-7553-11ea-9e74-8530b7a9fdba.png)
