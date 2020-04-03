@@ -40,7 +40,7 @@ extra_css:
 例えば、`h2` の見出し（`##`）の頭に :fa-arrow-circle-right: をくっつけたい場合は、[一覧で調べる](https://fontawesome.com/v4.7.0/icon/arrow-circle-right) と Unicode が `f0a9` なので、
 
 ```css
-/* Materials テーマの場合 */
+/* Material テーマの場合 */
 .md-typeset h2::before {
     display: inline-block !important;
     font-family: "FontAwesome";
@@ -58,9 +58,9 @@ h2::before {
 }
 ```
 
-な具合で記述します。もちろん `margin-right` は必須ではないですが、多少はあったようが目に優しい気がします。同様に、色やサイズも適宜変更できます。
+な具合で記述します。もちろん `margin-right` は必須ではないですが、多少はあったほうが目に優しい気がします。同様に、色やサイズも適宜変更できます。
 
-複数の見出しレベルを装飾したい場合は、副作用に気を付けつつ共通の指定はまとめるのもアリです。次の例では、`h1` に :fa-book:、`h2` に :fa-arrow-circle-right: を追加しています。
+複数の見出しレベルを装飾したい場合は、副作用に気を付けつつ共通の指定はまとめるのもアリです。次の例では、`Material` テーマで `h1` に :fa-book:、`h2` に :fa-arrow-circle-right: を追加しています。
 ```css
 .md-typeset > ::before {
     font-family: "FontAwesome";
