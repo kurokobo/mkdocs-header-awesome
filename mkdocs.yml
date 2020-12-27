@@ -10,8 +10,9 @@ theme:
 
 markdown_extensions:
     - admonition
-    - codehilite:
+    - pymdownx.highlight:
         linenums: true
+    - pymdownx.superfences
     - toc:
         permalink: true
     - fontawesome_markdown
